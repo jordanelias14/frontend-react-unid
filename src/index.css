@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #22254b;
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin: 0%;
+}
+
+.root {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #373b69;
+  display: flex;
+  justify-content: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+
+.search:focus {
+  outline: 0;
+}
+
+.filme-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/* esse é o hover com o overview dos filmes */
+.catalogo-filmes {
+  margin: 1rem;
+  width: 300px;
+  border-radius: 3px;
+  box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.1);
+  background-color: #373b69;
+  overflow: hidden;
+  position: relative;
+}
+
+.catalogo-filmes img {
+  max-width: 100%;
+}
+
+.filmes-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.filmes-info h3 {
+  margin: 0;
+}
+.filme-over {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  background-color: white;
+  color: #22254b;
+  padding: 1rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: auto;
+  max-height: 100%;
+  transform: translateY(102%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.catalogo-filmes:hover .filme-over {
+  transform: translateY(0%);
+}
