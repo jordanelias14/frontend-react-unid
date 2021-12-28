@@ -1,5 +1,5 @@
 # Projeto Front-end de Página Web usando a Api TMDB
-Usado nesse projeto React, Javascrip, HTML e CSS
+Usado nesse projeto React, JavaScript, HTML e CSS
 Após clonar, no seu diretório raiz rodar um:
 
 ## `npm start`
