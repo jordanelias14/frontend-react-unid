@@ -11,14 +11,50 @@ body {
 .root {
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
 }
-
 header {
   background-color: #373b69;
   display: flex;
-  justify-content: center;
+  padding: 1rem;
+}
+.title {
   font-family: "Times New Roman", Times, serif;
-  font-size: 20px;
+  font-size: 15px;
+  background-color: #22254b;
+  padding: 1rem;
+  font-weight: bold;
+  border-radius: 10px;
+  color: white;
+}
+a {
+  text-decoration: none;
+}
+.title:hover {
+  background-color: black;
+  color: white;
+}
+
+footer {
+  font-family: "Times New Roman", Times, serif;
+  justify-content: center;
+  display: flex;
+}
+.form {
+  padding: 1rem;
+  margin-left: auto;
+}
+.search {
+  background-color: white;
+  opacity: 60%;
+  border: 2px solid #22254b;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 1.2rem;
+  padding: 0.5rem 1.5rem;
+  padding: 1rem;
+  margin-left: auto;
+  color: black;
 }
 
 .search:focus {
@@ -29,11 +65,12 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  background-color: black;
 }
 /* esse é o hover com o overview dos filmes */
 .catalogo-filmes {
   margin: 1rem;
-  width: 300px;
+  width: 250px;
   border-radius: 3px;
   box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.1);
   background-color: #373b69;
@@ -43,6 +80,7 @@ header {
 
 .catalogo-filmes img {
   max-width: 100%;
+  min-height: 400px;
 }
 
 .filmes-info {
@@ -54,24 +92,54 @@ header {
 
 .filmes-info h3 {
   margin: 0;
+  color: white;
 }
+
 .filme-over {
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
+  border-radius: 6px;
   box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.1);
   position: absolute;
   background-color: white;
   color: #22254b;
   padding: 1rem;
+  overflow: auto;
   bottom: 0;
   left: 0;
   right: 0;
-  overflow: auto;
+
+  margin-top: 40px;
   max-height: 100%;
   transform: translateY(102%);
-  transition: transform 0.3s ease-in-out;
+  transition: transform 1s ease-in-out;
 }
 
 .catalogo-filmes:hover .filme-over {
   transform: translateY(0%);
+  /* transition-delay: 0.5s; */
+}
+
+.shadow {
+  background-color: #22254b;
+  border-radius: 3px;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+
+.shadow.verde {
+  color: greenyellow;
+}
+
+.shadow.laranja {
+  color: orange;
+}
+
+.shadow.vermelho {
+  color: rgb(201, 20, 20);
+}
+
+.shadow-Date {
+  background-color: #22254b;
+  border-radius: 3px;
+  padding: 0.5rem;
+  font-weight: bold;
 }

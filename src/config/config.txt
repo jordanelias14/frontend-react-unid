@@ -1,1 +1,0 @@
-const req_API = "https://api.themoviedb.org/3/movie/550?api_key=5678f8da1b28a307121ddcad57f837fc"
